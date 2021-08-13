@@ -20,7 +20,7 @@ END;
 /
 
 PROMPT Creando el usuario netmax_bdd...
-CREATE USER netmax_bdd IDENTIFIED BY serafin
+CREATE USER netmax_bdd IDENTIFIED BY netmax_bdd
 QUOTA UNLIMITED ON users;
 
 PROMPT Asignando privilegios...
