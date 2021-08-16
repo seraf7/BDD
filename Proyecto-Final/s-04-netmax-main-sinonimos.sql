@@ -34,4 +34,3 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s2
 @sinonimos/s-04-netmax-valida-sinonimos.sql
 
 PROMPT ¡¡Listo!!
-EXIT

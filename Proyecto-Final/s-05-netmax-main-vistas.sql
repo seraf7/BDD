@@ -42,4 +42,3 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s2
 @vistas/s-05-netmax-icl-s2-vistas-blob.sql
 
 PROMPT ¡¡Listo!!
-EXIT

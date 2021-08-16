@@ -34,4 +34,3 @@ CONNECT sys/&&syspass@iclbd_s2 as sysdba
 @s-01-netmax-usuario.sql
 
 PROMPT ¡¡Listo!!
-EXIT

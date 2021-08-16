@@ -66,4 +66,3 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s2
 @triggers/s-06-netmax-pais-trigger.sql
 
 PROMPT ¡¡Listo!!
-EXIT

@@ -30,4 +30,3 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s2
 @ddl/s-03-netmax-icl-s2-ddl.sql
 
 PROMPT ¡¡Listo!!
-EXIT
