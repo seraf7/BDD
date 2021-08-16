@@ -13,8 +13,8 @@ CONNECT netmax_bdd/netmax_bdd@sclbd_s1
 @triggers/s-06-netmax-trigger-programa.sql
 @triggers/s-06-netmax-trigger-scl-s1-serie.sql
 @triggers/s-06-netmax-trigger-scl-s1-pelicula.sql
--- @triggers/s-06-netmax-trigger-scl-s1-documental.sql
--- @triggers/s-06-netmax-trigger-scl-s1-iclhivo-programa.sql
+@triggers/s-06-netmax-trigger-scl-s1-documental.sql
+@triggers/s-06-netmax-trigger-scl-s1-archivo-programa.sql
 @triggers/s-06-netmax-trigger-scl-s1-playlist.sql
 @triggers/s-06-netmax-tipo-cuenta-trigger.sql
 @triggers/s-06-netmax-tipo-serie-trigger.sql
@@ -28,8 +28,8 @@ CONNECT netmax_bdd/netmax_bdd@sclbd_s2
 @triggers/s-06-netmax-trigger-programa.sql
 @triggers/s-06-netmax-trigger-scl-s1-serie.sql
 @triggers/s-06-netmax-trigger-scl-s1-pelicula.sql
--- @triggers/s-06-netmax-trigger-scl-s2-documental.sql
--- @triggers/s-06-netmax-trigger-scl-s2-iclhivo-programa.sql
+@triggers/s-06-netmax-trigger-scl-s2-documental.sql
+@triggers/s-06-netmax-trigger-scl-s1-archivo-programa.sql
 @triggers/s-06-netmax-trigger-scl-s1-playlist.sql
 @triggers/s-06-netmax-tipo-cuenta-trigger.sql
 @triggers/s-06-netmax-tipo-serie-trigger.sql
@@ -43,8 +43,8 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s1
 @triggers/s-06-netmax-trigger-programa.sql
 @triggers/s-06-netmax-trigger-icl-s1-serie.sql
 @triggers/s-06-netmax-trigger-icl-s1-pelicula.sql
--- @triggers/s-06-netmax-trigger-icl-s1-documental.sql
--- @triggers/s-06-netmax-trigger-icl-s1-iclhivo-programa.sql
+@triggers/s-06-netmax-trigger-icl-s1-documental.sql
+@triggers/s-06-netmax-trigger-icl-s1-archivo-programa.sql
 @triggers/s-06-netmax-trigger-icl-s1-playlist.sql
 @triggers/s-06-netmax-tipo-cuenta-trigger.sql
 @triggers/s-06-netmax-tipo-serie-trigger.sql
@@ -58,8 +58,8 @@ CONNECT netmax_bdd/netmax_bdd@iclbd_s2
 @triggers/s-06-netmax-trigger-programa.sql
 @triggers/s-06-netmax-trigger-icl-s2-serie.sql
 @triggers/s-06-netmax-trigger-icl-s2-pelicula.sql
--- @triggers/s-06-netmax-trigger-icl-s2-documental.sql
--- @triggers/s-06-netmax-trigger-icl-s2-iclhivo-programa.sql
+@triggers/s-06-netmax-trigger-icl-s2-documental.sql
+@triggers/s-06-netmax-trigger-icl-s2-archivo-programa.sql
 @triggers/s-06-netmax-trigger-icl-s2-playlist.sql
 @triggers/s-06-netmax-tipo-cuenta-trigger.sql
 @triggers/s-06-netmax-tipo-serie-trigger.sql
