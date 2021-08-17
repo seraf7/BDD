@@ -75,3 +75,7 @@ SELECT
   (SELECT COUNT(*) FROM tipo_cuenta_r3) AS tipo_cuenta_r3,
   (SELECT COUNT(*) FROM tipo_cuenta_r4) AS tipo_cuenta_r4
 FROM dual;
+
+PROMPT Validando sinónimos de HISTORICO_STATUS_PROGRAMA...
+SELECT COUNT(*) AS historico_status_programa
+FROM historico_status_programa_f1;

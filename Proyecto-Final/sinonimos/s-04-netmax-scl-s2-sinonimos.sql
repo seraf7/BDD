@@ -43,3 +43,4 @@ CREATE OR REPLACE SYNONYM tipo_serie_r4 FOR tipo_serie_r_icl_s2@iclbd_s2.fi.unam
 CREATE OR REPLACE SYNONYM serie_f3 FOR serie_f3_icl_s2@iclbd_s2.fi.unam;
 CREATE OR REPLACE SYNONYM tipo_cuenta_r4 FOR tipo_cuenta_r_icl_s2@iclbd_s2.fi.unam;
 CREATE OR REPLACE SYNONYM usuario_f2 FOR usuario_f2_icl_s2@iclbd_s2.fi.unam;
+CREATE OR REPLACE SYNONYM historico_status_programa_f1 FOR historico_status_programa_f1_icl_s2@iclbd_s2.fi.unam;
