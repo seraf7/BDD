@@ -84,7 +84,7 @@ BEGIN
       -- Verifica si hay correspondencia local
       SELECT COUNT(*) INTO v_count
       FROM programa_f1
-      WHERE programa_id = :new.programa_id;
+      WHERE programa_id = :old.programa_id;
 
       IF v_count > 0 THEN
         -- Borrado local
@@ -92,7 +92,7 @@ BEGIN
       ELSE
         SELECT COUNT(*) INTO v_count
         FROM programa_f2
-        WHERE programa_id = :new.programa_id;
+        WHERE programa_id = :old.programa_id;
 
         IF v_count > 0 THEN
           -- Borrado en fragmento 2
@@ -100,7 +100,7 @@ BEGIN
         ELSE
           SELECT COUNT(*) INTO v_count
           FROM programa_f3
-          WHERE programa_id = :new.programa_id;
+          WHERE programa_id = :old.programa_id;
 
           IF v_count > 0 THEN
             -- Borrado en fragmento 3
@@ -108,7 +108,7 @@ BEGIN
           ELSE
             raise_application_error(-20020,
               'Error de integridad para el campo programa_id: '
-              || :new.programa_id
+              || :old.programa_id
               || '. No se encontró el registro padre');
           END IF;
         END IF;

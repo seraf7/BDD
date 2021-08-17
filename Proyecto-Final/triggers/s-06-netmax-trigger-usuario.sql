@@ -63,19 +63,19 @@ BEGIN
 
     WHEN DELETING THEN
       -- Se valida vigencia de la cuenta
-      IF :new.vigente = 0 THEN
+      IF :old.vigente = 0 THEN
         -- Se borra del fragmento 2
         DELETE FROM usuario_f2 WHERE usuario_id = :old.usuario_id;
 
-      ELSIF :new.vigente = 1 AND :new.tipo_cuenta_id = 1 THEN
+      ELSIF :old.vigente = 1 AND :old.tipo_cuenta_id = 1 THEN
         -- Se borra del fragmento 3
         DELETE FROM usuario_f3 WHERE usuario_id = :old.usuario_id;
 
-      ELSIF :new.vigente = 1 AND :new.tipo_cuenta_id = 2 THEN
+      ELSIF :old.vigente = 1 AND :old.tipo_cuenta_id = 2 THEN
         -- Se borra del fragmento 4
         DELETE FROM usuario_f4 WHERE usuario_id = :old.usuario_id;
 
-      ELSIF :new.vigente = 1 AND :new.tipo_cuenta_id = 3 THEN
+      ELSIF :old.vigente = 1 AND :old.tipo_cuenta_id = 3 THEN
         -- Se borra del fragmento 5
         DELETE FROM usuario_f5 WHERE usuario_id = :old.usuario_id;
 
@@ -83,9 +83,9 @@ BEGIN
         -- Se lanza excepción por incumplir criterio de fragmentación
         raise_application_error(-20010,
           'Valor incorrecto en campo vigente ('
-          || :new.vigente
+          || :old.vigente
           || ') o campor tipo_cuenta_id ('
-          || :new.tipo_cuenta_id
+          || :old.tipo_cuenta_id
           || '). Vigente debe ser 0 o 1.El campo '
           || 'tipo_cuenta_id debe estar en el rango 1 - 3');
       END IF;
