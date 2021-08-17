@@ -99,3 +99,8 @@ CREATE OR REPLACE VIEW tipo_serie AS
 CREATE OR REPLACE VIEW tipo_cuenta AS
   SELECT tipo_cuenta_id, clave, descripcion, costo_mensual
   FROM tipo_cuenta_r1;
+
+-- HISTORICO_STATUS_PROGRAMA
+CREATE OR REPLACE VIEW historico_status_programa AS
+  SELECT historico_status_prog_id, fecha_status, status_programa_id, programa_id
+  FROM historico_status_programa_f1;
