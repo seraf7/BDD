@@ -94,7 +94,7 @@ CREATE TABLE documental_f3_icl_s2(
 -- table: historico_status_programa
 --
 
-CREATE TABLE historico_status_programa(
+CREATE TABLE historico_status_programa_f1_icl_s2(
     historico_status_prog_id    NUMBER(10, 0)    NOT NULL,
     fecha_status                DATE             NOT NULL,
     status_programa_id          NUMBER(2, 0)     NOT NULL,

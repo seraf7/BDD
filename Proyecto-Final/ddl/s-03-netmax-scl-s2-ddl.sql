@@ -74,11 +74,9 @@ CREATE TABLE usuario_f5_scl_s2(
     nombre              VARCHAR2(40)     NOT NULL,
     ap_paterno          VARCHAR2(40)     NOT NULL,
     ap_materno          VARCHAR2(40)     NOT NULL,
-    password            VARCHAR2(16)     NOT NULL,
     fecha_ingreso       DATE             NOT NULL,
     fecha_cuenta_fin    DATE             NOT NULL,
     vigente             NUMBER(1, 0)     NOT NULL,
-    num_tarjeta         VARCHAR2(16)     NOT NULL,
     tipo_cuenta_id      NUMBER(2, 0)     NOT NULL,
     CONSTRAINT usuario_f5_pk PRIMARY KEY (usuario_id),
     CONSTRAINT us_f5_tipo_cuenta_id_fk FOREIGN KEY (tipo_cuenta_id)
