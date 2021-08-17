@@ -89,8 +89,9 @@ PROMPT Cargando PLAYLIST
 @carga-inicial/netmax-carga-inicial-playlist.sql
 
 PROMPT cargando ARCHIVO_PROGRAMA (con datos BLOB)
---@carga-inicial/netmax-carga-inicial-archivo-programa.sql
-@carga-inicial/netmax-carga-inicial-archivo-programa-empty-blob.sql
+--@carga-inicial/netmax-carga-inicial-archivo-programa-empty-blob.sql
+@carga-inicial/netmax-carga-inicial-archivo-programa.sql
+
 
 PROMPT Carga de datos replicados exitosa, haciendo commit!.
 COMMIT;
